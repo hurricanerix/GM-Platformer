@@ -23,6 +23,7 @@
     <scripts name="player">
       <script>scripts\scr_player.gml</script>
     </scripts>
+    <script>scripts\scr_auto_tile.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="players">
