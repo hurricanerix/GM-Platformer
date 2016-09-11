@@ -5,9 +5,37 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="players">
+      <sprites name="green">
+        <sprite>sprites\spr_player_g_idle</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="tiles">
+      <sprite>sprites\spr_tiles_grass</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_get_inputs.gml</script>
+    <scripts name="player">
+      <script>scripts\scr_player.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <objects name="players">
+      <object>objects\obj_player_g</object>
+    </objects>
+    <objects name=" tiles">
+      <object>objects\obj_tile</object>
+      <object>objects\obj_tiles_grass</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_init</room>
+    <room>rooms\rm_level_1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
