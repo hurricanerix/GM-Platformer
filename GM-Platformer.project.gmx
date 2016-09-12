@@ -13,6 +13,7 @@
     <sprites name="players">
       <sprites name="green">
         <sprite>sprites\spr_player_g_idle</sprite>
+        <sprite>sprites\spr_player_g_jump</sprite>
       </sprites>
     </sprites>
     <sprites name="tiles">

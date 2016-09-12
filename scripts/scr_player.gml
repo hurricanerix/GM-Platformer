@@ -10,7 +10,7 @@ if (i_key_jump_p && i_is_grounded) {
     i_is_grounded = false;
     i_vspeed -= i_jumpspeed;
     audio_play_sound(snd_player_jump, 0, false);
-    image_index = 1;
+    sprite_index = spr_player_g_jump;
 }
 
 if (i_key_right_p > 0) {
@@ -34,7 +34,7 @@ if (place_meeting(x+i_hspeed, y, obj_tile)) {
 if (place_meeting(x, y+i_vspeed, obj_tile)) {
     // TODO: only set i_is_grounded if colliding with the top of a tile.
     i_is_grounded = true;
-    image_index = 0;
+    sprite_index = spr_player_g_idle;
     while(!place_meeting(x, y+sign(i_vspeed), obj_tile)) {
         y += sign(i_vspeed);
     }
