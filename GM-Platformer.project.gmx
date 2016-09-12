@@ -14,6 +14,7 @@
       <sprites name="green">
         <sprite>sprites\spr_player_g_idle</sprite>
         <sprite>sprites\spr_player_g_jump</sprite>
+        <sprite>sprites\spr_player_g_walk</sprite>
       </sprites>
     </sprites>
     <sprites name="tiles">

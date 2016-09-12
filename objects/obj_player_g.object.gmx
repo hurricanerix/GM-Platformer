@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize player instance variables
+image_speed = 0.2;
 i_gravity = 0.2;
 i_hspeed = 0; // horizontal movement speed in pixels per step.
 i_vspeed = 0; // vertical movement speed in pixels per step.
