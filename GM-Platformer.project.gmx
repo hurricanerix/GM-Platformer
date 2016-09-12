@@ -8,6 +8,9 @@
     <sounds name="players">
       <sound>sound\snd_player_jump</sound>
     </sounds>
+    <sounds name="enemies">
+      <sound>sound\snd_snake_death</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="players">
@@ -15,6 +18,12 @@
         <sprite>sprites\spr_player_g_idle</sprite>
         <sprite>sprites\spr_player_g_jump</sprite>
         <sprite>sprites\spr_player_g_walk</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="enemies">
+      <sprites name="snake">
+        <sprite>sprites\spr_enemy_snake_move</sprite>
+        <sprite>sprites\spr_enemy_snake_dead</sprite>
       </sprites>
     </sprites>
     <sprites name="tiles">
@@ -28,8 +37,12 @@
     <script>scripts\scr_get_inputs.gml</script>
     <scripts name="player">
       <script>scripts\scr_player.gml</script>
+      <script>scripts\scr_player_damage.gml</script>
     </scripts>
     <script>scripts\scr_auto_tile.gml</script>
+    <scripts name="enemies">
+      <script>scripts\scr_enemy_snake.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="players">
@@ -41,6 +54,10 @@
     </objects>
     <objects name="special">
       <object>objects\obj_camera</object>
+    </objects>
+    <objects name="enemies">
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_snake</object>
     </objects>
   </objects>
   <rooms name="rooms">
