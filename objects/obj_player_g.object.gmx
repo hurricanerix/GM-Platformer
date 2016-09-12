@@ -33,7 +33,8 @@ i_vspeed = 0; // vertical movement speed in pixels per step.
 i_speed = 4;
 i_jumpspeed = 5;
 i_is_grounded = false;
-
+i_max_health = 3;
+i_current_health = i_max_health;
 
 </string>
           </argument>
@@ -60,6 +61,30 @@ i_is_grounded = false;
             <string>/// Update player state.
 scr_player();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw player's hud
+scr_player_draw_hud();
 </string>
           </argument>
         </arguments>

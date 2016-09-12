@@ -36,13 +36,15 @@ if (i_hspeed > 0) {
 if (i_alive && place_meeting(x, y, obj_player_g)) {
     if (obj_player_g.y < y-1) {
         with (obj_player_g) {
-            i_vspeed = -i_jumpspeed;     
+            i_vspeed = -i_jumpspeed;
         }
         i_alive = false;
         sprite_index = spr_enemy_snake_dead;
         audio_play_sound(snd_snake_death, 0, false);
     } else {
-        scr_player_damage();       
+        with (obj_player_g) {
+            scr_player_damage();
+        }      
     }
 }
 
