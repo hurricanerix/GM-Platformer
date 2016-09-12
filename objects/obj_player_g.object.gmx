@@ -25,12 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Initialize player state
-grav = 0.2;
-hsp = 0;
-vsp = 0;
-jumpspeed = 5;
-movespeed = 4;
+            <string>/// Initialize player instance variables
+i_gravity = 0.2;
+i_hspeed = 0; // horizontal movement speed in pixels per step.
+i_vspeed = 0; // vertical movement speed in pixels per step.
+i_speed = 4;
+i_jumpspeed = 5;
+i_is_grounded = false;
+
+
 </string>
           </argument>
         </arguments>

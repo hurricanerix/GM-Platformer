@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="players">
+      <sound>sound\snd_player_jump</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="players">
       <sprites name="green">
